@@ -1,0 +1,26 @@
+snippet cb "cc_binary" 
+cc_binary(
+	name = "${1:name}",
+	srcs = [
+		"$1.cc",
+	],
+	deps = [
+		"$2",
+	],
+)
+endsnippet
+
+snippet cl "cc_library"
+cc_library(
+	name = "${1:name}",
+	srcs = [
+		"$1.cc",
+	],
+	hdrs = [
+		"$1.h"
+	],
+	deps = [
+		"$2",
+	]
+)
+endsnippet	

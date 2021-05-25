@@ -1,0 +1,55 @@
+[submodule "plugins/pack/ui/start/nerdtree"]
+	path = plugins/pack/ui/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "plugins/pack/ui/start/taboo"]
+	path = plugins/pack/ui/start/taboo
+	url = https://github.com/gcmt/taboo.vim
+[submodule "plugins/pack/ui/start/vim-airline"]
+	path = plugins/pack/ui/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "plugins/pack/lang/start/nerdcommenter"]
+	path = plugins/pack/lang/start/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter.git
+[submodule "plugins/pack/theme/opt/dracula"]
+	path = plugins/pack/theme/opt/dracula
+	url = https://github.com/dracula/vim.git
+[submodule "plugins/pack/theme/opt/gruvbox"]
+	path = plugins/pack/theme/opt/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "plugins/pack/theme/opt/molokai"]
+	path = plugins/pack/theme/opt/molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule "plugins/pack/theme/opt/OceanicNext"]
+	path = plugins/pack/theme/opt/OceanicNext
+	url = https://github.com/mhartington/oceanic-next.git
+[submodule "plugins/pack/finder/start/fzf.vim"]
+	path = plugins/pack/finder/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "plugins/pack/finder/start/fzf"]
+	path = plugins/pack/finder/start/fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "plugins/pack/lang/start/vim-codefmt"]
+	path = plugins/pack/lang/start/vim-codefmt
+	url = https://github.com/google/vim-codefmt.git
+[submodule "plugins/pack/lang/start/vim-maktaba"]
+	path = plugins/pack/lang/start/vim-maktaba
+	url = https://github.com/google/vim-maktaba.git
+[submodule "plugins/pack/lang/start/coc.nvim"]
+	path = plugins/pack/lang/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+	branch = release
+[submodule "plugins/pack/lang/start/ultisnips"]
+	path = plugins/pack/lang/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "plugins/pack/lang/start/vim-snippets"]
+	path = plugins/pack/lang/start/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "plugins/pack/editor/start/markdown-preview.nvim"]
+	path = plugins/pack/editor/start/markdown-preview.nvim
+	url = https://github.com/iamcco/markdown-preview.nvim
+[submodule "plugins/pack/tools/start/vim-surround"]
+	path = plugins/pack/tools/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "plugins/pack/lang/start/a.vim"]
+	path = plugins/pack/lang/start/a.vim
+	url = https://github.com/vim-scripts/a.vim
