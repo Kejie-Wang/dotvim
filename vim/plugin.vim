@@ -36,7 +36,9 @@ let g:taboo_tab_format=" %N %f%m "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <C-p> :Files<CR>
 nnoremap <silent> <C-l> :Buffers<CR>
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+if executable("ag")
+  let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+endif
 let g:fzf_buffers_jump = 1
 let g:fzf_action = {
   \ 'ctrl-t': 'tab drop',
@@ -70,6 +72,19 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  elseif (coc#rpc#ready())
+    call CocActionAsync('doHover')
+  else
+    execute '!' . &keywordprg . " " . expand('<cword>')
+  endif
+endfunction
+
 " GoTo code navigation.
 " key gd: go to definition
 " key gy: go to type definition
@@ -92,7 +107,7 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" ---> ultisnips
+""" ---> a.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <leader>a :A<CR>
 nnoremap <silent> <leader>va :AV<CR>
@@ -113,3 +128,18 @@ let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 let g:mkdp_open_to_the_world = 1
 let g:mkdp_echo_preview_url = 1
 let g:mkdp_refresh_slow = 1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" ---> easymotion
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" <Leader>f{char} to move to {char}
+map  <Leader><Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader><Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+nmap <Leader><Leader>s <Plug>(easymotion-overwin-f2)
+
+" Move to word
+map  <Leader><Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader><Leader>w <Plug>(easymotion-overwin-w)

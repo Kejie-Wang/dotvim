@@ -1,4 +1,4 @@
-snippet cb "cc_binary" 
+snippet cb "cc_binary"
 cc_binary(
 	name = "${1:name}",
 	srcs = [
@@ -21,6 +21,18 @@ cc_library(
 	],
 	deps = [
 		"$2",
-	]
+	],
 )
 endsnippet	
+
+snippet ct "cc_test"
+cc_test(
+	name = "${1:name}_test",
+	srcs = [
+		"$1_test.cc",
+	],
+	deps = [
+		":$1",
+	],
+)
+endsnippet
