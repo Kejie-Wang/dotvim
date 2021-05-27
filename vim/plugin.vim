@@ -35,6 +35,7 @@ let g:taboo_tab_format=" %N %f%m "
 """ ---> fzf
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <Leader>p :Files<CR>
 nnoremap <silent> <C-l> :Buffers<CR>
 if executable("ag")
   let $FZF_DEFAULT_COMMAND = 'ag -g ""'
