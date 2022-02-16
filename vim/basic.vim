@@ -47,6 +47,17 @@ syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ ===> Key mapping 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader=","
+
+" move in insert mode.
+inoremap <C-h> <esc>ha
+inoremap <C-j> <esc>ja
+inoremap <C-k> <esc>ka
+inoremap <C-l> <esc>la
+
+inoremap <C-s> <esc>:w<cr>a
+nnoremap <C-s> <esc>:w<cr>
+nnoremap <C-q> <esc>:wq<cr>
 
 " move between windows.
 "map <C-j> <C-W>j
@@ -58,4 +69,7 @@ syntax on
 nnoremap ( :tabp <cr>
 nnoremap ) :tabn <cr>
 
-let mapleader=","
+
+" vimrc
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>

@@ -56,3 +56,9 @@
 [submodule "plugins/pack/tools/start/easymotion"]
 	path = plugins/pack/tools/start/easymotion
 	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "plugins/pack/lang/start/vim-gutentags"]
+	path = plugins/pack/lang/start/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "plugins/pack/lang/start/gutentags_plus"]
+	path = plugins/pack/lang/start/gutentags_plus
+	url = https://github.com/skywind3000/gutentags_plus.git
